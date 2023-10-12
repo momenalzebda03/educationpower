@@ -1,10 +1,8 @@
 ::-webkit-scrollbar {
   width: 10px;
-  height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 20px;
   background: #1D212F;
 }
 
@@ -12,44 +10,13 @@ body {
   text-transform: capitalize;
 }
 
-body header {
-  z-index: 1;
-  background-color: #1D212F !important;
-}
-
-.hoverNavbar:hover {
-  color: #F58324 !important;
-}
-
-.buttonNavbar {
-  background-color: #F58324;
-}
-
-.buttonNavbar:hover {
-  background-color: rgba(245, 130, 36, 0.8823529412);
-  color: white !important;
-}
-
-main {
-  background-color: #1D212F;
-  height: 100vh;
-}
-
-.mainContainer {
-  transform: translate(0, 74px);
-}
-
-.sizeTitleMain {
-  font-size: 55px;
-}
-
 .textColorMain {
   line-height: 30px;
-  color: #b8b9bc;
+  color: #909090;
 }
 
 .divColorMain {
-  color: #a1a1a1;
+  color: #ccc;
 }
 
 .classSearch {
@@ -57,24 +24,59 @@ main {
 }
 
 .widthDivInput {
-  width: 80%;
+  width: 90%;
 }
 
-input::-moz-placeholder {
+.buttonComponent {
+  background-color: #F58324;
+}
+
+.buttonComponent:hover {
+  background-color: rgba(245, 130, 36, 0.8823529412);
+  color: white !important;
+}
+
+.textOrange {
+  color: #F58324;
+}
+
+body header {
+  z-index: 1;
+  background-color: #1D212F !important;
+}
+
+body header div div ul li .hoverNavbar:hover {
+  color: #F58324 !important;
+}
+
+body main {
+  background-color: #1D212F;
+  height: 100vh;
+}
+
+body main .mainContainer {
+  transform: translate(0, 74px);
+}
+
+body main .mainContainer .row div div .sizeTitleMain {
+  font-size: 55px;
+}
+
+body main .mainContainer .row div div form input::-moz-placeholder {
   padding-left: 35px;
 }
 
-input::placeholder {
+body main .mainContainer .row div div form input::placeholder {
   padding-left: 35px;
 }
 
 .divLineHeight::before {
   content: "";
   position: absolute;
-  background-color: #a1a1a1;
+  background-color: #ccc;
   width: 1.7px;
   height: 20px;
-  top: 4px;
+  top: 6px;
   left: -13px;
 }
 
@@ -82,28 +84,71 @@ input::placeholder {
   display: none !important;
 }
 
-.inputDisplay {
+body main .mainContainer .row div form .divButtonEnd .inputDisplay {
   display: flex;
 }
 
-.divSelect {
+body main .mainContainer .row div form .divButtonEnd .inputDisplay div .divSelect {
   transform: translate(0, -0.5px);
 }
 
-.customSelectArrow {
+body main .mainContainer .row div form .divButtonEnd .inputDisplay div .divSelect .customSelectArrow {
   position: absolute;
-  top: 8px;
+  top: 10.5px;
   right: -20px;
   color: #F58324;
   font-size: 12px;
 }
 
-select {
+body main .mainContainer .row div form .divButtonEnd .inputDisplay div .divSelect select {
   -webkit-appearance: none;
 }
 
-.divButtonEnd {
+body main .mainContainer .row div form .divButtonEnd {
   justify-content: space-between;
+}
+
+body section .container .row div div .imageColWidth {
+  width: 90%;
+}
+
+body .sectionPopular {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F6F7FA;
+}
+
+body .sectionPopular .gapRow {
+  row-gap: 30px;
+}
+
+body section .container div div .divArrawCarousle {
+  border: 2px solid #1D212F;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+body section .container div div .divArrawCarousle:hover {
+  color: white;
+  background-color: #F58324;
+}
+
+body section .container div div div .iconArraw {
+  font-size: 12px;
+}
+
+body section .container div div .row div .divHeightCarousel {
+  height: 320px;
+}
+
+body section .container div div .row div .divHeightCarousel div div .imageCarousel {
+  width: 50px;
+}
+
+footer {
+  background-color: #1D212F;
 }
 
 @media (max-width: 990px) {
@@ -113,11 +158,14 @@ select {
   .divWidthMobile {
     width: 100% !important;
   }
-  main {
+  body main {
     height: 750px;
   }
-  input {
+  body main .mainContainer .row div div form input {
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+  body main .mainContainer .row div form .divButtonEnd {
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

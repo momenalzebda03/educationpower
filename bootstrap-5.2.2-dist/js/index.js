@@ -1,3 +1,5 @@
+AOS.init();
+
 const clickableDiv = document.getElementById("clickableDiv");
 const inputField = document.getElementById("searchInput");
 const inputDisplay = document.getElementById("inputDisplay");

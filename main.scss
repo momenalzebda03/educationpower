@@ -3,51 +3,14 @@
 // start public
 ::-webkit-scrollbar {
     width: 10px;
-    height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 20px;
     background: $colorMain;
 }
 
 body {
     text-transform: capitalize;
-}
-
-// end public
-// start header
-body header {
-    z-index: 1;
-    background-color: $colorMain !important;
-}
-
-.hoverNavbar:hover {
-    color: $colorOrange !important;
-}
-
-.buttonNavbar {
-    background-color: $colorOrange;
-}
-
-.buttonNavbar:hover {
-    background-color: $colorHoverButton;
-    color: $colorWhite !important;
-}
-
-// end header
-// start main
-main {
-    background-color: $colorMain;
-    height: 100vh;
-}
-
-.mainContainer {
-    transform: translate(0, 74px);
-}
-
-.sizeTitleMain {
-    font-size: 55px;
 }
 
 .textColorMain {
@@ -64,10 +27,49 @@ main {
 }
 
 .widthDivInput {
-    width: 80%;
+    width: 90%;
 }
 
-input::placeholder {
+.buttonComponent {
+    background-color: $colorOrange;
+}
+
+.buttonComponent:hover {
+    background-color: $colorHoverButton;
+    color: $colorWhite !important;
+}
+
+.textOrange {
+    color: $colorOrange;
+}
+
+// end public
+// start header
+body header {
+    z-index: 1;
+    background-color: $colorMain !important;
+}
+
+body header div div ul li .hoverNavbar:hover {
+    color: $colorOrange !important;
+}
+
+// end header
+// start main
+body main {
+    background-color: $colorMain;
+    height: 100vh;
+}
+
+body main .mainContainer {
+    transform: translate(0, 74px);
+}
+
+body main .mainContainer .row div div .sizeTitleMain {
+    font-size: 55px;
+}
+
+body main .mainContainer .row div div form input::placeholder {
     padding-left: 35px;
 }
 
@@ -77,7 +79,7 @@ input::placeholder {
     background-color: $colorSearch;
     width: 1.7px;
     height: 20px;
-    top: 4px;
+    top: 6px;
     left: -13px;
 }
 
@@ -85,31 +87,82 @@ input::placeholder {
     display: none !important;
 }
 
-.inputDisplay {
+body main .mainContainer .row div form .divButtonEnd .inputDisplay {
     display: flex;
 }
 
-.divSelect {
+body main .mainContainer .row div form .divButtonEnd .inputDisplay div .divSelect {
     transform: translate(0, -0.5px);
 }
 
-.customSelectArrow {
+body main .mainContainer .row div form .divButtonEnd .inputDisplay div .divSelect .customSelectArrow {
     position: absolute;
-    top: 8px;
+    top: 10.5px;
     right: -20px;
     color: $colorOrange;
     font-size: 12px;
 }
 
-select {
+body main .mainContainer .row div form .divButtonEnd .inputDisplay div .divSelect select {
     -webkit-appearance: none;
 }
 
-.divButtonEnd {
+body main .mainContainer .row div form .divButtonEnd {
     justify-content: space-between;
 }
 
 // end main
+// start quality education
+body section .container .row div div .imageColWidth {
+    width: 90%;
+}
+
+// end quality education
+// start popular
+body .sectionPopular {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $colorourMost;
+}
+
+body .sectionPopular .gapRow {
+    row-gap: 30px;
+}
+
+// end popular
+// start student
+body section .container div div .divArrawCarousle {
+    border: 2px solid $colorMain;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body section .container div div .divArrawCarousle:hover {
+    color: $colorWhite;
+    background-color: $colorOrange;
+}
+
+body section .container div div div .iconArraw {
+    font-size: 12px;
+}
+
+body section .container div div .row div .divHeightCarousel {
+    height: 320px;
+}
+
+body section .container div div .row div .divHeightCarousel div div .imageCarousel {
+    width: 50px;
+}
+
+// end student
+// start footer
+footer {
+    background-color: $colorMain;
+}
+
+// end footer
 // start media
 @media (max-width: 990px) {
     body header div .collapse ul li .buttonNavbar {
@@ -120,13 +173,17 @@ select {
         width: 100% !important;
     }
 
-    main {
+    body main {
         height: 750px;
     }
 
-    input {
+    body main .mainContainer .row div div form input {
         padding-top: 35px;
         padding-bottom: 35px;
+    }
+
+    body main .mainContainer .row div form .divButtonEnd {
+        justify-content: center;
     }
 }
 
