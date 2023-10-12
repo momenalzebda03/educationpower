@@ -1,0 +1,123 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #1D212F;
+}
+
+body {
+  text-transform: capitalize;
+}
+
+body header {
+  z-index: 1;
+  background-color: #1D212F !important;
+}
+
+.hoverNavbar:hover {
+  color: #F58324 !important;
+}
+
+.buttonNavbar {
+  background-color: #F58324;
+}
+
+.buttonNavbar:hover {
+  background-color: rgba(245, 130, 36, 0.8823529412);
+  color: white !important;
+}
+
+main {
+  background-color: #1D212F;
+  height: 100vh;
+}
+
+.mainContainer {
+  transform: translate(0, 74px);
+}
+
+.sizeTitleMain {
+  font-size: 55px;
+}
+
+.textColorMain {
+  line-height: 30px;
+  color: #b8b9bc;
+}
+
+.divColorMain {
+  color: #a1a1a1;
+}
+
+.classSearch {
+  font-size: 20px;
+}
+
+.widthDivInput {
+  width: 80%;
+}
+
+input::-moz-placeholder {
+  padding-left: 35px;
+}
+
+input::placeholder {
+  padding-left: 35px;
+}
+
+.divLineHeight::before {
+  content: "";
+  position: absolute;
+  background-color: #a1a1a1;
+  width: 1.7px;
+  height: 20px;
+  top: 4px;
+  left: -13px;
+}
+
+.divLineHeight:first-child::before {
+  display: none !important;
+}
+
+.inputDisplay {
+  display: flex;
+}
+
+.divSelect {
+  transform: translate(0, -0.5px);
+}
+
+.customSelectArrow {
+  position: absolute;
+  top: 8px;
+  right: -20px;
+  color: #F58324;
+  font-size: 12px;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+.divButtonEnd {
+  justify-content: space-between;
+}
+
+@media (max-width: 990px) {
+  body header div .collapse ul li .buttonNavbar {
+    width: 25%;
+  }
+  .divWidthMobile {
+    width: 100% !important;
+  }
+  main {
+    height: 750px;
+  }
+  input {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}/*# sourceMappingURL=main.css.map */
