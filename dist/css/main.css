@@ -36,6 +36,10 @@
   color: #F58324;
 }
 
+.margin-sections {
+  margin-top: 150px;
+}
+
 body nav {
   z-index: 1;
   background-color: #1D212F !important;
@@ -43,6 +47,10 @@ body nav {
 
 body nav div div ul li .hoverNavbar {
   color: white;
+}
+
+body nav div div ul li .hover-navbar:hover {
+  color: #F58324 !important;
 }
 
 body main .style-main {
@@ -85,6 +93,45 @@ body main .style-main div div div form div .buttonNavbar {
   right: 17px;
 }
 
+body section .container .row div div .imageColWidth {
+  width: 90%;
+}
+
+body .sectionPopular {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F6F7FA;
+}
+
+body .sectionPopular div .gapRow {
+  row-gap: 30px;
+}
+
+body section .container div div .divArrawCarousle {
+  border: 2px solid #1D212F;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+body section .container div div .divArrawCarousle:hover {
+  color: white;
+  background-color: #F58324;
+}
+
+body section .container div div div .iconArraw {
+  font-size: 12px;
+}
+
+body section .container div div .row div .divHeightCarousel div div .imageCarousel {
+  width: 50px;
+}
+
+body footer {
+  background-color: #1D212F;
+}
+
 @media (max-width: 990px) {
   body main .style-main,
   body main .style-main div div div div .size-main-image {
@@ -109,5 +156,12 @@ body main .style-main div div div form div .buttonNavbar {
   }
   .divWidthMobile {
     width: 100% !important;
+  }
+  .margin-sections {
+    margin-top: 40px;
+  }
+  body .sectionPopular {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }/*# sourceMappingURL=main.css.map */

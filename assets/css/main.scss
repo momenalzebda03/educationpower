@@ -39,8 +39,12 @@
     color: $colorOrange;
 }
 
+.margin-sections {
+    margin-top: 150px;
+}
+
 // end public
-// start header
+// start navbar
 body nav {
     z-index: 1;
     background-color: $colorMain !important;
@@ -50,7 +54,11 @@ body nav div div ul li .hoverNavbar {
     color: $colorWhite;
 }
 
-// end header
+body nav div div ul li .hover-navbar:hover {
+    color: $colorOrange !important;
+}
+
+// end navbar
 // start main
 body main .style-main {
     background-color: $colorMain;
@@ -93,54 +101,50 @@ body main .style-main div div div form div .buttonNavbar {
 
 // end main
 // start quality education
-// body section .container .row div div .imageColWidth {
-//     width: 90%;
-// }
+body section .container .row div div .imageColWidth {
+    width: 90%;
+}
 
 // end quality education
 // start popular
-// body .sectionPopular {
-//     padding-top: 100px;
-//     padding-bottom: 100px;
-//     background-color: $colorourMost;
-// }
+body .sectionPopular {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $colorourMost;
+}
 
-// body .sectionPopular .gapRow {
-//     row-gap: 30px;
-// }
+body .sectionPopular div .gapRow {
+    row-gap: 30px;
+}
 
-// // end popular
-// // start student
-// body section .container div div .divArrawCarousle {
-//     border: 2px solid $colorMain;
-//     width: 50px;
-//     height: 50px;
-//     cursor: pointer;
-//     transition: 0.3s;
-// }
+// end popular
+// start student
+body section .container div div .divArrawCarousle {
+    border: 2px solid $colorMain;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-// body section .container div div .divArrawCarousle:hover {
-//     color: $colorWhite;
-//     background-color: $colorOrange;
-// }
+body section .container div div .divArrawCarousle:hover {
+    color: $colorWhite;
+    background-color: $colorOrange;
+}
 
-// body section .container div div div .iconArraw {
-//     font-size: 12px;
-// }
+body section .container div div div .iconArraw {
+    font-size: 12px;
+}
 
-// body section .container div div .row div .divHeightCarousel {
-//     height: 320px;
-// }
-
-// body section .container div div .row div .divHeightCarousel div div .imageCarousel {
-//     width: 50px;
-// }
+body section .container div div .row div .divHeightCarousel div div .imageCarousel {
+    width: 50px;
+}
 
 // end student
 // start footer
-// footer {
-//     background-color: $colorMain;
-// }
+body footer {
+    background-color: $colorMain;
+}
 
 // end footer
 // start media
@@ -173,18 +177,14 @@ body main .style-main div div div form div .buttonNavbar {
         width: 100% !important;
     }
 
-    //     body main {
-    //         height: 750px;
-    //     }
+    .margin-sections {
+        margin-top: 40px;
+    }
 
-    //     body main .mainContainer .row div div form input {
-    //         padding-top: 35px;
-    //         padding-bottom: 35px;
-    //     }
-
-    //     body main .mainContainer .row div form .divButtonEnd {
-    //         justify-content: center;
-    //     }
+    body .sectionPopular {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 // end media
